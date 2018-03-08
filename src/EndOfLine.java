@@ -1,3 +1,8 @@
+/*
+ * End of line version one
+ * In this version, a old file would be written to a new file 
+ * with the new end of brace
+ */
 import java.io.PrintWriter;
 import java.util.Scanner;
 

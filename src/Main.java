@@ -1,20 +1,22 @@
 /*
- * This code test the modified Loan method
- * it set one of the loan to negative to test
+ * This is the customized exception
+ * 
  */
-
-public class Main 
+public class Main extends Exception
 {
-	public static void main(String[] args)
-	{
-		try
-		{
-			Loan l1 = new Loan(3.4,2,1000);
-			Loan l2 = new Loan(-3.4,2,-1000);
-		}
-		catch(IllegalArgumentException ex)
-		{
-			System.out.println(ex);
-		}
-	}
+  private char hexChar;
+  
+  /*Construct an exception*/
+  public Main(char hexChar)
+  {
+	  super("Invalid hex character: " + hexChar);
+  }
+  
+  /*return the hexstring*/
+  public char getHexstring()
+  {
+	  return hexChar;
+  }
+  
 }
+ /* * This is the customized exception *  */public class Main extends Exception{  private char hexChar;    /*Construct an exception*/  public Main(char hexChar){	  super("Invalid hex character: " + hexChar);  }    /*return the hexstring*/  public char getHexstring(){	  return hexChar;  }   /* * This is the customized exception *  */public class Main extends Exception{  private char hexChar;    /*Construct an exception*/  public Main(char hexChar){	  super("Invalid hex character: " + hexChar);  }    /*return the hexstring*/  public char getHexstring(){	  return hexChar;  }  }{
